@@ -1,0 +1,27 @@
+@import "variables.scss";
+@import "buttons.scss";
+
+div.verify-content {
+    padding-top: 10%;
+
+    div.verify-message-holder {
+        margin: 5% 25%;
+        background: $white;
+        padding: 50px;
+
+        .verify-message {
+            font-size: $medium-ft-size;
+            line-height: 1.7;
+
+            .info:first-child:after {
+                content: "😁"
+            }
+        }
+    }
+
+    div.email-verify-view {
+        margin: 5% 25%;
+        background: $white;
+        padding: 25px;
+    }
+}

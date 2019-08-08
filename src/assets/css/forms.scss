@@ -1,0 +1,50 @@
+@import "variables.scss";
+@import "buttons.scss";
+
+form {
+  padding-top: 6%;
+
+  div.form {
+    background: $white;
+    padding: 15px 55px;
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 5px;
+
+    h1 {
+      text-align: center;
+    }
+
+    .form-group {
+      // padding-left: 10%;
+
+      label {
+        margin: 0px 0px 15px 0px;
+        font-size: $small-ft-size;
+      }
+
+      input {
+        width: 100%;
+        outline: none;
+        background: $normal-grey;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0px 0px 0px;
+        font-size: $small-ft-size;
+        font-weight: bold;
+      }
+
+      .checkbox-status {
+        font-size: 9pt;
+        text-align: center;
+        margin: 25px 0px;
+      }
+    }
+
+    .extras {
+      text-align: center;
+      font-size: $tiny-ft-size;
+    }
+  }
+}
