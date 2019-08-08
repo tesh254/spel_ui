@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap");
+html body {
+  margin: 0;
+  padding: 0;
+  background: #dbd7d7;
+  font-family: "Ubuntu", sans-serif; }
+
+html body {
+  margin: 0;
+  padding: 0;
+  background: #dbd7d7;
+  font-family: "Ubuntu", sans-serif; }
+
+.btn {
+  padding: 10px;
+  margin: 15px 0px;
+  font-size: 0.8em;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+.btn-lg {
+  width: 100%; }
+
+.btn-s {
+  box-shadow: 3px 5px; }
+
+.btn-primary {
+  background: #36A277; }
+
+.btn-black {
+  background: black;
+  color: white;
+  font-weight: bold; }
+
+.link-grey {
+  color: #bdb9b9; }
+
+div.verify-content {
+  padding-top: 10%; }
+  div.verify-content div.verify-message-holder {
+    margin: 5% 25%;
+    background: #fff;
+    padding: 50px; }
+    div.verify-content div.verify-message-holder .verify-message {
+      font-size: 16pt;
+      line-height: 1.7; }
+      div.verify-content div.verify-message-holder .verify-message .info:first-child:after {
+        content: "😁"; }
+  div.verify-content div.email-verify-view {
+    margin: 5% 25%;
+    background: #fff;
+    padding: 25px; }

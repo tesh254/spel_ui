@@ -1,0 +1,33 @@
+@import "variables.scss";
+
+.btn {
+  padding: 10px;
+  margin: 15px 0px;
+  font-size: 0.8em;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-lg {
+  width: 100%;
+}
+
+.btn-s {
+  box-shadow: 3px 5px;
+}
+
+.btn-primary {
+    background: $primary-color;
+}
+
+.btn-black {
+    background: $black;
+    color: white;
+    font-weight: bold;
+}
+
+.link-grey {
+    color: $light-grey;
+}

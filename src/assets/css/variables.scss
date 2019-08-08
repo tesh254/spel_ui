@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
+
+$primary-color: #36A277;
+$secondary-color: #00716C;
+$third-color: #90D173;
+$bg-color: #dbd7d7;
+$white: #fff;
+$black: black;
+$ubuntu-font: 'Ubuntu', sans-serif;
+$normal-grey: #a5a5a5;
+$light-grey: #bdb9b9;
+$small-ft-size: 11pt;
+$tiny-ft-size: 9pt;
+$medium-ft-size: 16pt;
+
+html {
+    body {
+        margin: 0;
+        padding: 0;
+        background: $bg-color;
+        font-family: $ubuntu-font;
+    }
+}
