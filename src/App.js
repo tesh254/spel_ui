@@ -19,6 +19,8 @@ import Login from "./components/containers/Login";
 import SignUp from "./components/containers/Signup";
 import VerifyView from "./components/views/Verify";
 import EmailVerify from "./components/views/EmailVerify";
+import ForgotPassword from "./components/views/ForgotPassword";
+import PasswordReset from "./components/views/PasswordReset";
 
 if (localStorage.getItem("jwt_token")) {
   // Set auth token header auth
@@ -52,7 +54,9 @@ class App extends React.Component {
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/signup" component={SignUp} />
                 <Route exact path="/verify" component={VerifyView} />
-                <Route exact path="/email-verify/:token" component={EmailVerify} /> 
+                <Route exact path="/email-verify/:token" component={EmailVerify} />
+                <Route exact path="/forgot-password" component={ForgotPassword} />
+                <Route exact path="/password-reset/:token" component={PasswordReset} />
               </Switch>
             </div>
           </BrowserRouter>

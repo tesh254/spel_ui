@@ -68,3 +68,67 @@ form {
     form div.form .extras {
       text-align: center;
       font-size: 9pt; }
+
+@media screen and (max-width: 500px) {
+  form {
+    padding-top: 20%; }
+    form div.form {
+      background: #fff;
+      padding: 15px 55px;
+      width: 90%;
+      margin-left: 5%;
+      border-radius: 5px; }
+      form div.form h1 {
+        text-align: center; }
+      form div.form .form-group label {
+        margin: 0px 0px 15px 0px;
+        font-size: 11pt; }
+      form div.form .form-group input {
+        width: 100%;
+        outline: none;
+        background: #a5a5a5;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0px 0px 0px;
+        font-size: 11pt;
+        font-weight: bold; }
+      form div.form .form-group .checkbox-status {
+        font-size: 9pt;
+        text-align: center;
+        margin: 25px 0px; }
+      form div.form .extras {
+        text-align: center;
+        font-size: 9pt; } }
+
+@media screen and (max-width: 1050px) {
+  form {
+    padding-top: 6%; }
+    form div.form {
+      background: #fff;
+      padding: 15px 55px;
+      width: 90%;
+      margin-left: 5%;
+      border-radius: 5px; }
+      form div.form h1 {
+        text-align: center; }
+      form div.form .form-group label {
+        margin: 0px 0px 15px 0px;
+        font-size: 11pt; }
+      form div.form .form-group input {
+        width: 100%;
+        outline: none;
+        background: #a5a5a5;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0px 0px 0px;
+        font-size: 11pt;
+        font-weight: bold; }
+      form div.form .form-group .checkbox-status {
+        font-size: 9pt;
+        text-align: center;
+        margin: 25px 0px; }
+      form div.form .extras {
+        text-align: center;
+        font-size: 9pt; } }

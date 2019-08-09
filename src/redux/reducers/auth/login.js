@@ -1,4 +1,11 @@
-import { ERROR, LOADING, LOGIN, SET_CURRENT_USER } from "../../actions/type";
+import {
+  ERROR,
+  LOADING,
+  LOGIN,
+  SET_CURRENT_USER,
+  EMAIL,
+  RESET
+} from "../../actions/type";
 import isEmpty from "../../../validation/is-empty";
 
 let initialState = {
@@ -25,6 +32,16 @@ const loginReducer = (state = initialState, action) => {
         isAuthenticated: !isEmpty(action.payload),
         user: action.payload.user
       };
+    case EMAIL:
+      return {
+        ...state,
+        message: action.payload.message
+      }
+    case RESET:
+      return {
+        ...state,
+        message: action.payload.message
+      }     
     case LOGIN:
       let token;
       let refreshToken;
