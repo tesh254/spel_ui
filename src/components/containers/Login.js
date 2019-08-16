@@ -20,12 +20,6 @@ class Login extends React.Component {
         isLoading: nextProps.isLoading
       });
     }
-    else {
-        const { history } = this.props;
-        setTimeout(() => {
-            history.push("/");
-        }, 1000)
-    }
   }
 
   onChange = e => {

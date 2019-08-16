@@ -1,23 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap");
 
-$primary-color: #36A277;
-$secondary-color: #00716C;
-$third-color: #90D173;
+html{
+  --white: #fff;
+  --black: #000;
+  transition: .3s all;
+}
+
+html[data-theme="dark"] {
+  --black: #fff;
+  --white: #000;
+}
+
+$primary-color: #36a277;
+$secondary-color: #00716c;
+$third-color: #90d173;
 $bg-color: #dbd7d7;
-$white: #fff;
-$black: black;
-$ubuntu-font: 'Ubuntu', sans-serif;
+$white: var(--white);
+$black: var(--black);
+$ubuntu-font: "Ubuntu", sans-serif;
 $normal-grey: #a5a5a5;
 $light-grey: #bdb9b9;
+$side-bar-color: #edf2f7;
 $small-ft-size: 11pt;
 $tiny-ft-size: 9pt;
 $medium-ft-size: 16pt;
+$blue: #2196f3;
 
 html {
-    body {
-        margin: 0;
-        padding: 0;
-        background: $bg-color;
-        font-family: $ubuntu-font;
-    }
+  body {
+    margin: 0;
+    padding: 0;
+    background: $bg-color;
+    font-family: $ubuntu-font;
+  }
 }

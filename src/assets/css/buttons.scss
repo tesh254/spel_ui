@@ -2,7 +2,7 @@
 
 .btn {
   padding: 10px;
-  margin: 15px 0px;
+  // margin-top: 15px 0px;
   font-size: 0.8em;
   border-radius: 8px;
   border: none;
@@ -10,8 +10,13 @@
   cursor: pointer;
 }
 
+.btn-nav {
+  margin-top: -150px;
+}
+
 .btn-lg {
   width: 100%;
+  margin: 15px 10px;
 }
 
 .btn-s {
@@ -23,8 +28,8 @@
 }
 
 .btn-black {
-    background: $black;
-    color: white;
+    background: var(--black);
+    color: var(--white);
     font-weight: bold;
 }
 

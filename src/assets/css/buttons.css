@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap");
+html {
+  --white: #fff;
+  --black: #000;
+  transition: .3s all; }
+
+html[data-theme="dark"] {
+  --black: #fff;
+  --white: #000; }
+
 html body {
   margin: 0;
   padding: 0;
@@ -7,25 +16,28 @@ html body {
 
 .btn {
   padding: 10px;
-  margin: 15px 0px;
   font-size: 0.8em;
   border-radius: 8px;
   border: none;
   outline: none;
   cursor: pointer; }
 
+.btn-nav {
+  margin-top: -150px; }
+
 .btn-lg {
-  width: 100%; }
+  width: 100%;
+  margin: 15px 10px; }
 
 .btn-s {
   box-shadow: 3px 5px; }
 
 .btn-primary {
-  background: #36A277; }
+  background: #36a277; }
 
 .btn-black {
-  background: black;
-  color: white;
+  background: var(--black);
+  color: var(--white);
   font-weight: bold; }
 
 .link-grey {

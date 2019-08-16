@@ -14,6 +14,9 @@ import {
 } from "./redux/actions/auth/setCurrentUser";
 import PrivateRouter from "./components/commons/PrivateRouter";
 
+// Styling
+import "./assets/css/variables.scss";
+
 // Components
 import Login from "./components/containers/Login";
 import SignUp from "./components/containers/Signup";
@@ -43,24 +46,41 @@ if (localStorage.getItem("jwt_token")) {
 }
 
 class App extends React.Component {
+  componentDidMount() {
+    document
+      .getElementsByTagName("HTML")[0]
+      .setAttribute("data-theme", localStorage.getItem("theme"));
+  }
+  
   render() {
     return (
-        <Provider store={store}>
-          <BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <ToastContainer autoClose={3000} />
+          <div
+            className="App"
+            data-theme={localStorage.getItem("theme") || "light"}
+          >
             <Nav />
-            <ToastContainer autoClose={3000} />
-            <div className="App">
-              <Switch>
-                <Route exact path="/login" component={Login} />
-                <Route exact path="/signup" component={SignUp} />
-                <Route exact path="/verify" component={VerifyView} />
-                <Route exact path="/email-verify/:token" component={EmailVerify} />
-                <Route exact path="/forgot-password" component={ForgotPassword} />
-                <Route exact path="/password-reset/:token" component={PasswordReset} />
-              </Switch>
-            </div>
-          </BrowserRouter>
-        </Provider>
+            <Switch>
+              <Route exact path="/login" component={Login} />
+              <Route exact path="/signup" component={SignUp} />
+              <Route exact path="/verify" component={VerifyView} />
+              <Route
+                exact
+                path="/email-verify/:token"
+                component={EmailVerify}
+              />
+              <Route exact path="/forgot-password" component={ForgotPassword} />
+              <Route
+                exact
+                path="/password-reset/:token"
+                component={PasswordReset}
+              />
+            </Switch>
+          </div>
+        </BrowserRouter>
+      </Provider>
     );
   }
 }
