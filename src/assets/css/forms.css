@@ -1,10 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap");
+html {
+  --white: #fff;
+  --black: #000;
+  transition: .3s all; }
+
+html[data-theme="dark"] {
+  --black: #fff;
+  --white: #000; }
+
 html body {
   margin: 0;
   padding: 0;
   background: #dbd7d7;
   font-family: "Ubuntu", sans-serif; }
+
+html {
+  --white: #fff;
+  --black: #000;
+  transition: .3s all; }
+
+html[data-theme="dark"] {
+  --black: #fff;
+  --white: #000; }
 
 html body {
   margin: 0;
@@ -14,25 +32,28 @@ html body {
 
 .btn {
   padding: 10px;
-  margin: 15px 0px;
   font-size: 0.8em;
   border-radius: 8px;
   border: none;
   outline: none;
   cursor: pointer; }
 
+.btn-nav {
+  margin-top: -150px; }
+
 .btn-lg {
-  width: 100%; }
+  width: 100%;
+  margin: 15px 10px; }
 
 .btn-s {
   box-shadow: 3px 5px; }
 
 .btn-primary {
-  background: #36A277; }
+  background: #36a277; }
 
 .btn-black {
-  background: black;
-  color: white;
+  background: var(--black);
+  color: var(--white);
   font-weight: bold; }
 
 .link-grey {
@@ -41,16 +62,18 @@ html body {
 form {
   padding-top: 6%; }
   form div.form {
-    background: #fff;
+    background: var(--white);
     padding: 15px 55px;
     width: 40%;
     margin-left: 30%;
     border-radius: 5px; }
     form div.form h1 {
-      text-align: center; }
+      text-align: center;
+      color: var(--black); }
     form div.form .form-group label {
       margin: 0px 0px 15px 0px;
-      font-size: 11pt; }
+      font-size: 11pt;
+      color: var(--black); }
     form div.form .form-group input {
       width: 100%;
       outline: none;
@@ -73,7 +96,7 @@ form {
   form {
     padding-top: 20%; }
     form div.form {
-      background: #fff;
+      background: var(--white);
       padding: 15px 55px;
       width: 90%;
       margin-left: 5%;
@@ -105,7 +128,7 @@ form {
   form {
     padding-top: 6%; }
     form div.form {
-      background: #fff;
+      background: var(--white);
       padding: 15px 55px;
       width: 90%;
       margin-left: 5%;

@@ -17,6 +17,9 @@ const loginUser = data => async dispatch => {
         payload: res.data
       });
       toast.success(res.data.message);
+      setTimeout(() => {
+        window.location.href = "/";
+      }, 1000);
     })
     .catch(err => {
       dispatch({

@@ -17,7 +17,6 @@ class EmailVerify extends React.Component {
   }
 
   render() {
-      console.log(this.props)
     return (
       <div className="verify-content">
         <div className="email-verify-view">
